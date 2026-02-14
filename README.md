@@ -49,16 +49,4 @@ Note: If vlan_membership_check_fail is high, the port is not a member of that VL
 
 
 
-### Step 3: Save It
-1. Scroll to the bottom of the page.
-2. In the "Commit changes" box, type: `Complete README with ELAM triggers`.
-3. Click the green **Commit changes** button.
 
----
-
-### Why this version is better:
-* **Code Blocks:** The ` ```bash ` tags create those nice grey boxes that make the commands easy to read.
-* **Blockquotes:** The ` > ` creates the "Note" callouts that highlight the "Drop" bits.
-* **Separation:** The ` --- ` creates the horizontal lines to separate the two troubleshooting scenarios.
-
-**Once you save this, check your main repository page. Does it look clean and organized now?**
