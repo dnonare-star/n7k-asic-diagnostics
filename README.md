@@ -1,11 +1,11 @@
 # Nexus 7K ASIC Diagnostics & ELAM Triage
 
-### 🛠 Overview
+###  Overview
 This repository is a technical runbook for identifying "silent" packet loss within the Cisco Nexus 7000/7700 switching fabric. Use these commands when standard interface counters show no errors but traffic is failing.
 
 ---
 
-## 🔍 Scenario 1: The "Silent" ACL Drop
+##  Scenario 1: The "Silent" ACL Drop
 If you suspect an ACL is dropping traffic without logging, use ELAM to "freeze" the packet in the ASIC.
 
 ### The Workflow:
@@ -26,7 +26,7 @@ Bash
 display dbb0 report | inc drop
 Note: If v4_acl_drop is 1, the packet was killed by an ACL.
 
-🔍 Scenario 2: VLAN Membership Mismatch
+Scenario 2: VLAN Membership Mismatch
 Use this if you suspect a VLAN tagging mismatch between the Nexus and an upstream peer.
 
 The Workflow:
@@ -41,7 +41,7 @@ Bash
 display dbb0 report | inc vlan
 Note: If vlan_membership_check_fail is high, the port is not a member of that VLAN.
 
-📁 Repository Contents
+ Repository Contents
 /scripts: CLI snippets for quick copy-pasting.
 
 /docs: Detailed field notes on M-Series vs. F-Series cards.
